@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/yun_sdk_66"
+    android:padding="10dip">
+
+    <Button
+        android:id="@+id/btn_test_login"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="登录" />
+
+    <EditText
+        android:id="@+id/et_test_money"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dip"
+        android:layout_marginTop="10dip"
+        android:maxLength="8"
+        android:numeric="decimal"
+        android:singleLine="true" />
+
+    <Button
+        android:id="@+id/btn_test_charger"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="充值" />
+
+    <Button
+        android:id="@+id/btn_test_sendRoleinfo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="发送角色信息" />
+
+    <Button
+        android:id="@+id/btn_test_logout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="退出登陆" />
+
+    <Button
+        android:id="@+id/btn_test_switchAccount"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="切换账号" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="5dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="在接入前要和技术人员索要appid,appkey,clientid,clientkey"
+        android:textSize="16dip" />
+</LinearLayout>

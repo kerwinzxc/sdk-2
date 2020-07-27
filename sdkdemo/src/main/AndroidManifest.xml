@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.etsdk.sdkdemo">
+    <!--竖屏清单文件请在src/portrait_SDK目录中查看-->
+    <!--横屏清单文件请在src/landscape_SDK目录中查看-->
+    <!--配置信息统一处理-->
+<application>
+
+    <!-- 服务 -->
+    <service android:name="com.game.sdk.YunsdkService" />
+
+    <meta-data
+        android:name="YZ_CLIENTKEY"
+        android:value="14222820" />
+
+    <meta-data
+        android:name="YZ_CLIENTSECRET"
+        android:value="1a293e3f78749563fb6d4cccf869c0cf" />
+
+    <meta-data
+        android:name="YZ_URL"
+        android:value="https://api.8688sdk.com/" /> <!--    测试：http://dev.api.8688sdk.com  正式：https://api.8688sdk.com-->
+
+    <meta-data
+        android:name="YZ_FORMAT"
+        android:value="json" />
+</application>
+
+</manifest>

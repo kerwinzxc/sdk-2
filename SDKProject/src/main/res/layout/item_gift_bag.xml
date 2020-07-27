@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
+    <RelativeLayout
+        android:id="@+id/item_rl"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@drawable/bg_uniquecode_grey"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="12dp"
+        >
+        <TextView
+            android:id="@+id/item_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="新手礼包"
+            android:textSize="16sp"
+            android:textColor="@color/yun_sdk_white"/>
+
+        <TextView
+            android:id="@+id/item_tv_instr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/item_tv_name"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/yun_sdk_white"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:layout_toLeftOf="@+id/ivStatus"/>
+
+        <TextView
+            android:id="@+id/item_tv_term"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="有效期至："
+            android:textSize="13sp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/item_tv_instr"
+            android:textColor="@color/yun_sdk_white"/>
+
+        <ImageView
+            android:id="@+id/ivStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bt_copy_uniquecode"
+            />
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/item_ll_foot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:visibility="gone"
+        android:gravity="center">
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0.5dp"
+            android:background="#CCCCCC"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="没有更多了"
+            android:textSize="11sp"
+            android:gravity="center"
+            android:textColor="@color/yun_sdk_66"
+            android:layout_weight="1"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0.5dp"
+            android:background="#CCCCCC"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+</LinearLayout>
+

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="20dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="#d8d8d8"
+    android:launchMode="singleTask"
+    android:padding="10dp">
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="恭喜您注册成功"-->
+<!--            android:layout_gravity="center_horizontal"-->
+<!--            android:textSize="20sp"-->
+
+<!--            ></TextView>-->
+
+<!--    <LinearLayout-->
+<!--        android:orientation="vertical"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        >-->
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="系统已为您自动分配账号："-->
+<!--            android:layout_marginLeft="20dp"-->
+<!--            android:textSize="25sp"-->
+<!--            ></TextView>-->
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="游戏账号："-->
+<!--            android:layout_marginLeft="20dp"-->
+<!--            ></TextView>-->
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="游戏密码："-->
+<!--            android:layout_marginLeft="20dp"-->
+<!--            ></TextView>-->
+<!--    </LinearLayout>-->
+<!--    <LinearLayout-->
+<!--        android:orientation="horizontal"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
+<!--        <Button-->
+<!--            android:id="@+id/button"-->
+<!--            android:text="保存至相册"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"></Button>-->
+<!--    </LinearLayout>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+
+        android:orientation="vertical"
+        android:background="#d8d8d8"
+        tools:ignore="UselessParent">
+
+        <TextView
+            android:id="@+id/yun_sdk_title_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:maxLines="1"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:text="恭喜您注册成功"
+            android:textColor="@color/yun_sdk_orange"
+            android:textSize="24sp" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1px"
+            android:background="@color/yun_sdk_gray7f" />
+
+        <TextView
+            android:id="@+id/yun_sdk_time_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textColor="#FF8400"
+            android:text="系统已为您自动分配账号："
+            android:textSize="15sp" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+            </LinearLayout>
+        <LinearLayout
+            android:background="#d8d8d8"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/yun_sdk__zhanghhao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:autoLink="web"
+                android:gravity="center|top|left"
+                android:minHeight="50dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="游戏账号："
+
+                android:textColor="#FF8400"
+                android:textSize="12sp" />
+            <TextView
+                android:id="@+id/yun_sdk_content_mima"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:autoLink="web"
+                android:gravity="center|top|left"
+                android:minHeight="50dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="1111"
+                android:textColor="#666666"
+                android:textSize="12sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:background="#d8d8d8"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/yun_sdk__text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:autoLink="web"
+                android:gravity="center|top|left"
+                android:minHeight="50dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="游戏密码："
+                android:textColor="#FF8400"
+                android:textSize="12sp" />
+            <TextView
+                android:id="@+id/yun_sdk_content_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:autoLink="web"
+                android:gravity="center|top|left"
+                android:minHeight="50dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="1111"
+                android:textColor="#666666"
+                android:textSize="12sp" />
+        </LinearLayout>
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1px"
+            android:background="@color/yun_sdk_gray7f" />
+
+        <LinearLayout
+            android:id="@+id/yun_sdk_layout_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/yun_sdk_button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="保存至相册"
+                android:background="#FF8400"
+                android:textColor="#d8d8d8" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

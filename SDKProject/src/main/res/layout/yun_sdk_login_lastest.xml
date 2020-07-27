@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/yun_sdk_yk_login"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:padding="20dp"
+    android:background="@drawable/radius_bg"
+    android:visibility="visible">
+
+    <TextView
+        android:id="@+id/yun_sdk_ll_loginLogo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="用户登录"
+        android:textSize="18dp"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/yun_sdk_black"
+        android:gravity="center">
+
+    </TextView>
+
+    <LinearLayout
+        android:id="@+id/yun_sdk_ll_loginInput"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/yun_sdk_ll_loginLogo"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/yun_sdk_ll_loginAccount"
+            android:layout_width="fill_parent"
+            android:background="@drawable/yun_sdk_input_bg"
+            android:layout_height="40dip"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/icon_account"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="8dp"/>
+
+            <EditText
+                android:id="@+id/yun_sdk_et_loginAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                style="@style/EditTextStyle"
+                android:hint="请输入账号/手机号"
+                android:maxLength="16"
+                android:paddingLeft="5dip"
+                android:paddingRight="30dip"
+                android:layout_weight="8"/>
+
+            <ImageView
+                android:id="@+id/yun_sdk_iv_cancel"
+                style="@style/EditCancleStyle"/>
+
+            <ImageView
+                android:id="@+id/yun_sdk_iv_loginUserSelect"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:focusable="true"
+                android:scaleType="center"
+                android:src="@drawable/icon_arrow_down" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearlayoutPwd"
+            android:layout_width="match_parent"
+            android:background="@drawable/yun_sdk_input_bg"
+            android:layout_height="40dip"
+            android:layout_marginTop="20dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/icon_pwd"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="8dp"/>
+
+            <EditText
+                android:id="@+id/yun_sdk_et_loginPwd"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                style="@style/EditTextStyle"
+                android:layout_weight="1"
+                android:hint="请输入密码"
+                android:inputType="textPassword"
+                android:maxLength="16"
+                android:maxLines="1"
+                android:paddingLeft="5dip" />
+
+            <ImageView
+                android:id="@+id/yun_sdk_iv_pwd_cancel"
+                style="@style/EditCancleStyle"/>
+
+            <ImageView
+                android:id="@+id/yun_sdk_img_show_pwd"
+                style="@style/ShowOrHideStyle" />
+
+<!--            <TextView-->
+<!--                android:id="@+id/yun_sdk_tv_divline"-->
+<!--                android:layout_width="1dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_alignParentTop="true"-->
+<!--                android:background="@color/yun_sdk_gray_d8" />-->
+
+            <!--<ImageView-->
+            <!--android:id="@+id/yun_iv_loginForget_pwd"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginLeft="8dp"-->
+            <!--android:layout_toLeftOf="@+id/yun_btn_loginSubmitForgetPwd"-->
+            <!--android:background="@drawable/yun_sdk_ic_login_lock" />-->
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/yun_sdk_btn_loginSubmitForgetPwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/yun_sdk_ll_loginInput"
+        android:layout_alignParentRight="true"
+        android:background="@null"
+        android:text="忘记密码"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="15dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:textColor="@color/yun_sdk_hint_textcolot"
+        android:textSize="14dip" />
+
+    <Button
+        android:id="@+id/yun_sdk_btn_loginSubmit"
+        style="@style/ButtonStyle"
+        android:layout_below="@id/yun_sdk_btn_loginSubmitForgetPwd"
+        android:text="进入游戏"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/yun_sdk_btn_loginSubmit"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/yun_sdk_tv_mRegisterFastRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="一键注册"
+            android:textColor="@color/yun_sdk_66"
+            android:gravity="center"
+            android:padding="6dp"
+            android:textSize="14dip" />
+
+        <LinearLayout
+            android:id="@+id/yun_sdk_ll_loginRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:gravity="center"
+                android:text="手机注册"
+                android:textColor="@color/yun_sdk_66"
+                android:padding="6dp"
+                android:textSize="14dip" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

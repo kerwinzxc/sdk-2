@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.YunLoginActivity"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <com.game.sdk.view.YunFastLoginView
+        android:id="@+id/yun_sdk_fastLoginView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"></com.game.sdk.view.YunFastLoginView>
+
+    <com.game.sdk.view.YunLoginView
+        android:id="@+id/yun_sdk_loginView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+    <com.game.sdk.view.YunRegisterView
+        android:id="@+id/yun_sdk_registerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+    <com.game.sdk.view.YunUserNameRegisterView
+        android:id="@+id/yun_sdk_userNameRegisterView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+    <com.game.sdk.view.YunAuthenticationView
+        android:id="@+id/yun_sdk_authentication"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+    <com.game.sdk.view.YunForgetPwdView
+        android:id="@+id/yun_sdk_forgetPwdView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+</LinearLayout>

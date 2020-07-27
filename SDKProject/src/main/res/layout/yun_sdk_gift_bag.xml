@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingBottom="5dp"
+    android:padding="20dp">
+    <ImageView
+        android:id="@+id/yun_sdk_iv_cancel"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:padding="8dp"
+        android:visibility="visible"
+        android:src="@drawable/cancel" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/yun_sdk_iv_cancel"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="10dp">
+        <TextView
+            android:id="@+id/tvGettable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="可领取"
+            android:padding="5dp"/>
+        <TextView
+            android:id="@+id/tvGetted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已领取"
+            android:padding="5dp"
+            android:layout_marginLeft="40dp"/>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/RvGettable"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tv_version"
+        android:layout_below="@+id/linearLayout"
+        app:layoutManager="LinearLayoutManager"
+        android:visibility="gone"
+
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/RvGetted"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tv_version"
+        android:layout_below="@+id/linearLayout"
+        app:layoutManager="LinearLayoutManager"
+        android:visibility="gone"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_default_page"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tv_version"
+        android:layout_below="@+id/linearLayout"
+        android:visibility="gone"
+        android:paddingTop="50dp">
+        <ImageView
+            android:id="@+id/defaultPage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/default_page"
+            />
+
+    </LinearLayout>
+
+
+
+
+    <TextView
+        android:id="@+id/tv_version"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="version"
+        android:textSize="12sp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/yun_sdk_hint_textcolot"
+        android:layout_alignParentBottom="true"
+        />
+
+
+</RelativeLayout>

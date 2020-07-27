@@ -1,0 +1,17 @@
+android {
+	 productFlavors {
+	 	 "portrait" {
+			 dimension "api"
+	 	 	 applicationId "com.game.sdk.yunzhao100167portrait"
+	 	 	 versionCode 1
+	 	 	 resValue( "string", "app_name", "8688竖屏版" )
+	 	 }
+
+	 	 "landscape" {
+			 dimension "api"
+	 	 	 applicationId "com.game.sdk.yunzhao100167landscape"
+	 	 	 versionCode 1
+	 	 	 resValue( "string", "app_name", "8688横屏版" )
+	 	 }
+	 }
+}

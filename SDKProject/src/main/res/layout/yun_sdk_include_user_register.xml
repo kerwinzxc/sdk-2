@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/yun_sdk_rl_login"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@drawable/radius_bg"
+    android:paddingBottom="15dp">
+
+    <TextView
+        android:id="@+id/yun_sdk_tv_uRegisterTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:hint="账号注册"
+        android:textColor="@color/yun_sdk_33"
+        android:textSize="18dp" />
+
+    <LinearLayout
+        android:id="@+id/yun_sdk_iv_uRegisterInput"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/yun_sdk_tv_uRegisterTitle"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/yun_sdk_ll_uRegisterAccount"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/yun_sdk_input_bg">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/icon_account"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="8dp"/>
+            <EditText
+                android:id="@+id/yun_sdk_et_uRegisterAccount"
+                android:layout_width="fill_parent"
+                android:layout_height="35dip"
+                style="@style/EditTextStyle"
+                android:layout_gravity="center_vertical"
+                android:hint="请输入帐号"
+                android:maxLength="16"
+                android:paddingRight="30dip" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/yun_sdk_input_bg"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/icon_pwd"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="8dp"/>
+            <EditText
+                android:id="@+id/yun_sdk_et_uRegisterPwd"
+                android:layout_width="0dp"
+                android:layout_height="40dip"
+                style="@style/EditTextStyle"
+                android:layout_weight="1"
+                android:hint="请输入密码"
+                android:maxLength="16"
+                android:paddingRight="30dip"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearlayoutPolicy"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        android:layout_gravity="center_vertical">
+        <CheckBox
+            android:id="@+id/cb_privacy_policy"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:checked="true"
+            android:background="@drawable/checkbox_selector"
+            android:button="@null"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:layout_gravity="center"
+            android:text="我已阅读并同意"
+            />
+        <TextView
+            android:id="@+id/tv_register_policy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:layout_gravity="center"
+            android:text="用户注册服务协议"
+            android:textColor="@color/yun_sdk_tab_select"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:layout_gravity="center"
+            android:text="及"
+            />
+        <TextView
+            android:id="@+id/tv_privacy_policy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:layout_gravity="center"
+            android:textColor="@color/yun_sdk_tab_select"
+            android:text="隐私政策"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvScreenShot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="11sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:text="@string/screen_shot_tips"
+        android:textColor="@color/yun_sdk_tab_select"
+        />
+
+    <Button
+        android:id="@+id/yun_sdk_btn_uRegisterSubmit"
+        style="@style/ButtonStyle"
+        android:layout_below="@id/yun_sdk_iv_uRegisterInput"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="10dp"
+        android:hint="立即注册" />
+
+    <RelativeLayout
+        android:id="@+id/rlOtherRegisterEnter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true">
+
+        <TextView
+            android:id="@+id/yun_sdk_tv_uRegisterBackLogin"
+            android:layout_width="70dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:padding="6dp"
+            android:gravity="center_vertical"
+            android:text="@string/account_already"
+            android:textColor="@color/yun_sdk_66"
+            android:textSize="14dip" />
+
+        <TextView
+            android:id="@+id/tv_yun_sdk_mobileRegister"
+            android:layout_width="70dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="6dp"
+            android:gravity="center_vertical"
+            android:text="@string/register_by_mobile"
+            android:textColor="@color/yun_sdk_66"
+            android:textSize="14dip" />
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

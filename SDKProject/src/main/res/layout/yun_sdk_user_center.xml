@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+    <ImageView
+        android:id="@+id/yun_sdk_iv_cancel"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:padding="8dp"
+        android:visibility="visible"
+        android:src="@drawable/cancel" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/yun_sdk_iv_cancel"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/iv_icon"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/protrait"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                />
+            <TextView
+                android:id="@+id/tv_user_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="222222222222"
+                android:gravity="left|center"
+                android:textColor="@color/yun_sdk_33"
+                android:textStyle="bold"
+                android:textSize="18sp"/>
+
+            <LinearLayout
+                android:id="@+id/ll_swith_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_user_account"
+                android:background="@drawable/bg_switch_account"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="10dp" >
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_switch" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="切换账号"
+                    android:textSize="13sp"
+                    android:textColor="@color/yun_sdk_brown"
+                    />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_user_verify"
+            android:layout_width="match_parent"
+            android:layout_marginTop="30dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="实名认证"
+                android:textColor="@color/yun_sdk_33"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/tv_identified"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/yun_sdk_66"
+                android:layout_alignParentRight="true"
+                android:drawableRight="@drawable/icon_arrow_right"
+                android:drawablePadding="12dp"/>
+
+            <TextView
+                android:id="@+id/tv_user_verifify"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:text="认证"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:textSize="13sp"
+                android:textColor="@color/yun_sdk_title"
+                android:background="@drawable/yun_sdk_enable_bg"
+                android:layout_centerVertical="true"
+                android:visibility="gone"
+                />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_mobile_authentication"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="绑定手机"
+                android:textColor="@color/yun_sdk_33"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/tv_binded_mobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/yun_sdk_tab_select"
+                android:layout_marginLeft="10dp"
+                android:layout_alignParentRight="true"
+                android:drawableRight="@drawable/icon_arrow_right"
+                android:drawablePadding="12dp"/>
+            <TextView
+                android:id="@+id/tv_user_bind"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/yun_sdk_title"
+                android:layout_alignWithParentIfMissing="true"
+                android:gravity="center"
+                android:background="@drawable/yun_sdk_enable_bg"
+                android:layout_centerVertical="true"
+                android:textSize="13sp"
+                android:layout_alignParentRight="true"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_modify_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="修改密码"
+                android:textSize="16sp"
+                android:textColor="@color/yun_sdk_33"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_arrow_right"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/yun_sdk_gray_cc" />
+
+
+
+        <RelativeLayout
+            android:id="@+id/rl_server_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="客服信息"
+                android:textColor="@color/yun_sdk_33"
+                android:textSize="16sp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_arrow_right"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_recharge_record"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/yun_sdk_white"
+            android:visibility="gone">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="充值记录"
+                android:textColor="@color/yun_sdk_title"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="查看"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/yun_sdk_title"
+                android:gravity="center_vertical"
+                android:drawablePadding="5dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/yun_sdk_gray_d8"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_version"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="版本号："
+        android:textColor="@color/yun_sdk_hint_textcolot"
+        android:textSize="12sp"
+        android:layout_alignParentBottom="true"/>
+
+
+</RelativeLayout>

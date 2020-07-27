@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@drawable/radius_bg"
+    android:padding="20dp">
+    <RelativeLayout
+        android:id="@+id/yun_sdk_rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/yun_sdk_tv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:paddingBottom="6dip"
+            android:paddingLeft="12dip"
+            android:paddingRight="8dip"
+            android:paddingTop="6dip"
+            android:textSize="16sp"
+            android:drawableLeft="@drawable/icon_arrow_left"
+            android:drawablePadding="8dp"
+            android:visibility="gone"/>
+
+        <TextView
+            style="@style/TitleStyle"
+            android:maxLength="8"
+            android:text="忘记密码"/>
+
+        <ImageView
+            android:id="@+id/yun_sdk_iv_cancel"
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/cancel" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/yun_sdk_rl_mRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/yun_sdk_rl_top"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+
+        <LinearLayout
+            android:id="@+id/yun_sdk_ll_mRegisterInput"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical">
+
+            <!-- 请输入手机号-->
+            <LinearLayout
+                android:id="@+id/rl_mobile"
+                style="@style/InputBgGreyStyle">
+
+                <ImageView
+                    style="@style/InputIconStyle"
+                    android:src="@drawable/icon_phone"
+                    />
+                <EditText
+                    android:id="@+id/yun_sdk_et_mRegisterAccount"
+                    style="@style/InputEtStyle"
+                    android:layout_weight="8"
+                    android:hint="请输入手机号码"
+                    android:maxLength="11"
+                    android:inputType="number" />
+
+                <ImageView
+                    android:id="@+id/yun_sdk_iv_account_cancel"
+                    style="@style/EditCancleStyle"/>
+
+            </LinearLayout>
+
+            <!-- 请输入验证码-->
+            <RelativeLayout
+                style="@style/InputBgGreyStyle"
+                android:layout_marginTop="20dp">
+
+                <ImageView
+                    android:id="@+id/iv_code"
+                    style="@style/InputIconStyle"
+                    android:src="@drawable/icon_codes"
+                    />
+                <EditText
+                    android:id="@+id/yun_sdk_et_mRegisterCode"
+                    style="@style/InputEtStyle"
+                    android:hint="请输入验证码"
+                    android:maxLength="6"
+                    android:inputType="number"
+                    android:layout_toLeftOf="@+id/yun_sdk_iv_code_cancel"
+                    android:layout_toRightOf="@id/iv_code" />
+
+                <ImageView
+                    android:id="@+id/yun_sdk_iv_code_cancel"
+                    style="@style/EditCancleStyle"
+                    android:layout_toLeftOf="@+id/divide"
+                    android:layout_marginRight="10dp"/>
+                <TextView
+                    android:id="@+id/divide"
+                    style="@style/DivideStyle"
+                    android:layout_toLeftOf="@+id/yun_sdk_btn_mRegisterSendCode"
+                    />
+                <Button
+                    android:id="@+id/yun_sdk_btn_mRegisterSendCode"
+                    style="@style/BtnCode"
+                    android:text="获取验证码" />
+
+            </RelativeLayout>
+            <!-- 请输入密码-->
+            <RelativeLayout
+                style="@style/InputBgGreyStyle"
+                android:layout_marginTop="20dp">
+
+                <ImageView
+                    android:id="@+id/iv_newPwd"
+                    style="@style/InputIconStyle"
+                    android:src="@drawable/icon_pwds"
+                    />
+                <EditText
+                    android:id="@+id/yun_sdk_et_mRegisterPwd"
+                    style="@style/InputEtStyle"
+                    android:layout_toLeftOf="@id/yun_sdk_img_show_pwd"
+                    android:hint="请输入密码"
+                    android:inputType="textPassword"
+                    android:layout_toRightOf="@id/iv_newPwd"
+                    android:maxLength="16" />
+
+                <ImageView
+                    android:id="@+id/yun_sdk_img_show_pwd"
+                    style="@style/ShowOrHideStyle" />
+
+                <ImageView
+                    android:id="@+id/yun_sdk_iv_pwd_cancel"
+                    style="@style/EditCancleStyle"
+                    android:layout_toLeftOf="@id/yun_sdk_img_show_pwd"/>
+
+            </RelativeLayout>
+            <!-- 请再次输入密码-->
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="35dip"
+                android:visibility="gone">
+
+                <EditText
+                    android:id="@+id/yun_sdk_et_mRegisterPwd_again"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dip"
+                    style="@style/EditTextStyle"
+                    android:layout_toLeftOf="@id/yun_sdk_img_show_pwd_again"
+                    android:hint="请再次输入密码"
+                    android:inputType="textPassword"
+                    android:maxLength="16"
+                    android:paddingLeft="5dip"
+                    android:paddingRight="30dip" />
+
+                <ImageView
+                    android:id="@+id/yun_sdk_img_show_pwd_again"
+                    style="@style/ShowOrHideStyle" />
+
+                <ImageView
+                    android:id="@+id/yun_sdk_iv_repwd_cancel"
+                    android:layout_width="26dp"
+                    android:layout_height="match_parent"
+                    android:paddingRight="7dp"
+                    android:paddingLeft="7dp"
+                    android:layout_toLeftOf="@id/yun_sdk_img_show_pwd_again"
+                    android:visibility="gone"/>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/yun_sdk_btn_confirm"
+            style="@style/ButtonStyle"
+            android:layout_below="@id/yun_sdk_ll_mRegisterInput"
+            android:layout_marginTop="22dp"
+            android:text="确 认" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tips"
+            android:textColor="@color/yun_sdk_title"
+            android:layout_marginTop="20dp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tv_connect_server"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/yun_sdk_title"
+            android:layout_marginTop="20dp"
+            android:visibility="gone"/>
+
+
+    </LinearLayout>
+</RelativeLayout>

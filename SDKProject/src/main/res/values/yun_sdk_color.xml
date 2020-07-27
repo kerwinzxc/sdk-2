@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="yun_sdk_login_bg_translucence_black">#000000</color>
+    <color name="yun_sdk_gray_d8">#d8d8d8</color>
+    <color name="yun_sdk_gray_cc">#cccccc</color>
+    <color name="yun_sdk_blues">#4c6791</color>
+    <color name="yun_sdk_text_blacks">#767575</color>
+    <color name="yun_sdk_grayc3">#C3C3C3</color>
+    <color name="yun_sdk_black2a">#2A2A2A</color>
+    <color name="yun_sdk_orange">#FF8400</color>
+    <color name="yun_sdk_gray7f">#7F7C7C</color>
+    <color name="yun_sdk_title">#ff4500</color>
+    <color name="yun_sdk_white">#ffffff</color>
+    <color name="yun_sdk_black">#000000</color>
+    <color name="yun_sdk_33">#333333</color>
+    <color name="yun_sdk_66">#666666</color>
+    <color name="yun_sdk_tab_unselect">#C6B5A5</color>
+    <color name="yun_sdk_tab_select">#FF8500</color>
+    <color name="yun_sdk_user_center_background">#f2f2f2</color>
+    <color name="yun_sdk_hint_textcolot">#999999</color>
+    <color name="yun_sdk_default_divide">#d7d7d7</color>
+    <color name="yun_sdk_brown">#978575</color>
+</resources>

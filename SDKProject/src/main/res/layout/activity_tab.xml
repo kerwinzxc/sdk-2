@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".ui.TabActivity">
+
+    <RadioGroup
+        android:id="@+id/rgRadioGroup"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/bg_tab_left">
+        <RadioButton
+            android:id="@+id/rbMy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:drawableTop="@drawable/tab_my_selector"
+            android:text="我的"
+            android:textSize="12sp"
+            android:checked="true"
+            android:layout_marginTop="60dp"
+            android:textColor="@color/yun_sdk_tab_select"
+            android:drawablePadding="5dp"
+            android:button="@null" />
+        <RadioButton
+            android:id="@+id/rbGift"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:drawableTop="@drawable/tab_gift_selector"
+            android:text="礼包"
+            android:textSize="12sp"
+            android:textColor="#C6B5A5"
+            android:layout_marginTop="40dp"
+            android:drawablePadding="5dp"
+            android:button="@null" />
+
+    </RadioGroup>
+
+    <FrameLayout
+        android:id="@+id/flTabFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_tab_fra">
+    </FrameLayout>
+
+</LinearLayout>

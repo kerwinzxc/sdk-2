@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+    android:padding="20dp"
+    >
+    <RelativeLayout
+        android:id="@+id/yun_sdk_rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/yun_sdk_tv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:paddingBottom="3dip"
+            android:paddingRight="8dip"
+            android:paddingTop="3dip"
+            android:drawableLeft="@drawable/icon_arrow_left" />
+
+        <TextView
+            android:id="@+id/yun_sdk_tv_charge_title"
+            style="@style/TitleStyle"
+            android:hint="绑定手机" />
+
+        <ImageView
+            android:id="@+id/yun_sdk_iv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:gravity="center"
+            android:padding="10dp"
+            android:tint="@color/yun_sdk_black"
+            android:src="@drawable/cancel"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/yun_sdk_ll_bind"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/yun_sdk_rl_top"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:visibility="gone">
+        <LinearLayout
+            android:id="@+id/yun_sdk_ll_mRegisterInput"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- 请输入手机号-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:orientation="horizontal"
+                android:background="@drawable/yun_sdk_input_bg_white"
+                android:paddingLeft="15dp">
+
+                <LinearLayout
+                    android:id="@+id/rl_mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    >
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/icon_phone"/>
+
+                    <EditText
+                        android:id="@+id/yun_sdk_et_mRegisterAccount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        style="@style/EditTextStyle"
+                        android:layout_weight="8"
+                        android:hint="请输入手机号码"
+                        android:maxLength="11"
+                        android:paddingLeft="10dip"
+                        android:inputType="number"/>
+
+                    <ImageView
+                        android:id="@+id/yun_sdk_iv_account_cancel"
+                        style="@style/EditCancleStyle"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+            <!-- 请输入验证码-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:background="@drawable/yun_sdk_input_bg_white">
+
+                <Button
+                    android:id="@+id/yun_sdk_btn_mRegisterSendCode"
+                    style="@style/BtnCode"
+                    android:text="获取验证码" />
+                <View
+                    android:layout_centerVertical="true"
+                    style="@style/DivideStyle"
+                    android:layout_toLeftOf="@+id/yun_sdk_btn_mRegisterSendCode"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@id/yun_sdk_btn_mRegisterSendCode"
+                    android:layout_marginRight="5dp"
+                    android:paddingLeft="15dp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/icon_codes"/>
+                    <EditText
+                        android:id="@+id/yun_sdk_et_mRegisterCode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        style="@style/EditTextStyle"
+                        android:layout_weight="8"
+                        android:hint="请输入验证码"
+                        android:maxLength="11"
+                        android:paddingLeft="10dip"
+                        android:inputType="number" />
+
+                    <ImageView
+                        android:id="@+id/yun_sdk_iv_code_cancel"
+                        style="@style/EditCancleStyle"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/yun_sdk_btn_confirm"
+            style="@style/ButtonStyle"
+            android:layout_below="@id/yun_sdk_ll_mRegisterInput"
+            android:layout_marginTop="22dp"
+            android:text="确 认" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/yun_sdk_ll_currbind"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/yun_sdk_rl_top"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:visibility="gone">
+<!--        tv_user_account-->
+        <LinearLayout
+            android:id="@+id/yun_sdk_ll_curr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- 请输入手机号-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:orientation="horizontal"
+                android:paddingLeft="15dp"
+                android:background="@drawable/yun_sdk_input_bg_white">
+
+                <LinearLayout
+                    android:id="@+id/rl_curr_mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    >
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/icon_phone"/>
+                    <TextView
+                        android:id="@+id/tv_curr_mobile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="8"
+                        android:gravity="left|center"
+                        android:maxLength="11"
+                        android:paddingLeft="10dip"
+                        android:selectAllOnFocus="true"
+                        android:singleLine="true"
+                        android:textColor="@color/yun_sdk_33"
+                        android:textColorHint="@color/yun_sdk_hint_textcolot"
+                        android:inputType="number"
+                        android:textSize="14dip" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="您当前的手机号"
+                        android:textColor="@color/yun_sdk_hint_textcolot"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+            <!-- 请输入验证码-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:background="@drawable/yun_sdk_input_bg_white"
+                android:paddingLeft="15dp">
+
+                <Button
+                    android:id="@+id/btn_CurrSendCode"
+                    style="@style/BtnCode"
+                    android:text="获取验证码"/>
+                <View
+                    android:id="@+id/view"
+                    style="@style/DivideStyle"
+                    android:layout_toLeftOf="@+id/btn_CurrSendCode"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@id/view"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/icon_codes"/>
+                    <EditText
+                        android:id="@+id/etCurrCode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        style="@style/EditTextStyle"
+                        android:layout_weight="8"
+                        android:hint="请输入验证码"
+                        android:maxLength="6"
+                        android:paddingLeft="5dip"
+                        android:inputType="number"/>
+
+                    <ImageView
+                        android:id="@+id/iv_curr_code_cancel"
+                        style="@style/EditCancleStyle"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_curr_confirm"
+            style="@style/ButtonStyle"
+            android:layout_below="@id/yun_sdk_ll_mRegisterInput"
+            android:layout_marginTop="22dp"
+            android:text="下一步" />
+
+    </LinearLayout>
+</RelativeLayout>

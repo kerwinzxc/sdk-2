@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:background="@color/yun_sdk_white"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingTop="15dp"
+    >
+    <RelativeLayout
+        android:id="@+id/item_rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp">
+
+        <TextView
+            android:id="@+id/item_tv_app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="测试游戏"
+            android:textSize="16sp"
+            android:textColor="@color/yun_sdk_black"/>
+        <TextView
+            android:id="@+id/item_tv_payed_fee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="0.01"
+            android:textSize="16sp"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/yun_sdk_black" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/item_tv_order_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="订单：375974593489543"
+        android:textSize="16sp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/item_rl_title"
+        android:padding="4dp"
+        android:textColor="@color/yun_sdk_black"/>
+
+    <TextView
+        android:id="@+id/item_tv_created"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="订单创建时间"
+        android:textSize="16sp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/item_tv_order_code"
+        android:padding="4dp"
+        android:textColor="@color/yun_sdk_black"/>
+
+    <TextView
+        android:id="@+id/item_tv_payment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="支付方式"
+        android:textSize="16sp"
+        android:gravity="right"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/item_tv_order_code"
+        android:padding="4dp"
+        android:textColor="@color/yun_sdk_black"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/yun_sdk_user_center_background"
+        android:layout_below="@id/item_tv_created"
+        android:layout_marginTop="15dp"
+        />
+
+
+
+</RelativeLayout>
